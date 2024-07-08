@@ -3,6 +3,7 @@
 .venv*/
 venv*/
 app/__pycache__/
+api/__pycache__/
 dist/
 .coverage*
 htmlcov/
