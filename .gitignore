@@ -16,3 +16,12 @@ node_modules/
 # Debug
 yarn-debug.log*
 yarn-error.log*
+
+# Environments 
+.env 
+.venv 
+env/ 
+venv/ 
+ENV/ 
+env.bak/ 
+venv.bak/ 
