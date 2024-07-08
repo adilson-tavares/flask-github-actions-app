@@ -1,3 +1,22 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/app/index" }]
+  "version": 2,
+  "builds": [
+    {
+      "src": "app/index.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "15mb",
+        "pythonVersion": "3.8"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app/index.py"
+    }
+  ],
+  "env": {
+    "FLASK_ENV": "production"
+  }
 }
