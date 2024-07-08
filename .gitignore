@@ -8,3 +8,11 @@ dist/
 htmlcov/
 .tox/
 docs/_build/
+node_modules/
+
+# Vercel
+.vercel
+
+# Debug
+yarn-debug.log*
+yarn-error.log*
