@@ -1,19 +1,18 @@
 {
-
-    "builds": [
-        {
-            "src": "api/inde.py",
-            "use": "@vercel/python"
-        },
-        {
-            "src": "static/**",
-            "use": "@vercel/static"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "api/index.py"
-        }
-    ]
-  }
+  "builds": [
+      {
+          "src": "api/index.py",
+          "use": "@vercel/python"
+      },
+      {
+          "src": "static/**",
+          "use": "@vercel/static"
+      }
+  ],
+  "routes": [
+      {
+          "src": "/(.*)",
+          "dest": "api/index.py"
+      }
+  ]
+}
