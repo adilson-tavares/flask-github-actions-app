@@ -1,22 +1,7 @@
-.idea/
-.vscode/
-.venv*/
-venv*/
-__pycache__
-__pycache__
-dist/
-.coverage*
-htmlcov/
-.tox/
-docs/_build/
-node_modules/
-
-# Vercel
 .vercel
-
-# Debug
-yarn-debug.log*
-yarn-error.log*
+*.log
+*.pyc
+__pycache__
 
 # Environments 
 .env 
