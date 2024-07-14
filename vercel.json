@@ -1,19 +1,17 @@
 {
     "version": 2,
     "builds": [
-        {
-            "src": "api/api.py",
-            "use": "@vercel/python"
-        }
+      { "src": "api/api.py", "use": "@vercel/python" }
     ],
-    "rewrites": [
-        {
-            "source": "/api/(.*)",
-            "destination": "/api/api.py"
-        },
-        {
-            "source": "/(.*)",
-            "destination": "/api/index"
-        }
+    "routes": [
+      { "handle": "filesystem" },
+      {
+        "src": "/api/(.*)",
+        "dest": "/api/api.py"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/api/index"
+      }
     ]
-}
+  }
