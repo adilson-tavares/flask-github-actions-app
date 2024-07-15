@@ -1,19 +1,12 @@
 {
-    "target": "production",
     "builds": [
         {
             "src": "api/api.py",
-            "use": "@vercel/python",
-            "config": {
-                "zeroConfig": true
-            }
+            "use": "@vercel/python"
         },
         {
             "src": "!{api/**,package.json,middleware.[jt]s}",
-            "use": "@vercel/static",
-            "config": {
-                "zeroConfig": true
-            }
+            "use": "@vercel/static"
         }
     ]
 }
